@@ -36,12 +36,12 @@
       remove_data_table(data.key);
     });
     $(document).ready(function () {
-      $("#sessionpage").hide();
-
+      //$("#sessionpage").hide();
+          $("#event").hide();
       $('#btnAdd22').click(function () {
         var event = $('#event').val();
         if (event == "Got_the_data") {
-          $("#sessionpage").show();
+          //$("#sessionpage").show();
           var eventurl = "https://maker.ifttt.com/trigger/" + event + "/with/key/fj8OEG2LlZsi6gNhqTEvGOLDH0vgETx6fUWHEUqt3w4"
           $.get(eventurl, function (data, status) {
 
