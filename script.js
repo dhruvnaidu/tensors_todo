@@ -35,9 +35,10 @@
     database.ref("users").on("child_removed", function (data) {
       remove_data_table(data.key);
     });
-    $(document).ready(function () {
-      //$("#sessionpage").hide();
-          $("#event").hide();
+      $(document).ready(function () {
+     // $("#sessionpage").hide();
+     $("#event").hide();
+     
       $('#btnAdd22').click(function () {
         var event = $('#event').val();
         if (event == "Got_the_data") {
